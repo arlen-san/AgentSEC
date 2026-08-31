@@ -1,0 +1,98 @@
+[
+  {
+    "cve_id": "CVE-2024-3400",
+    "description": "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software enables an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.",
+    "cvss_score": 10.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "cwe_id": "CWE-77",
+    "published_date": "2024-04-12T08:15:00Z",
+    "modified_date": "2024-04-20T12:00:00Z",
+    "affected_products": ["Palo Alto Networks PAN-OS 10.2", "Palo Alto Networks PAN-OS 11.0", "Palo Alto Networks PAN-OS 11.1"],
+    "references": ["https://security.paloaltonetworks.com/CVE-2024-3400"]
+  },
+  {
+    "cve_id": "CVE-2024-21762",
+    "description": "A out-of-bounds write vulnerability in Fortinet FortiOS allows a remote unauthenticated attacker to execute arbitrary code or commands via specially crafted HTTP requests.",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "cwe_id": "CWE-787",
+    "published_date": "2024-02-09T10:15:00Z",
+    "modified_date": "2024-03-15T08:00:00Z",
+    "affected_products": ["Fortinet FortiOS 7.4.0-7.4.2", "Fortinet FortiOS 7.2.0-7.2.6", "Fortinet FortiOS 7.0.0-7.0.13"],
+    "references": ["https://fortiguard.com/psirt/FG-IR-24-015"]
+  },
+  {
+    "cve_id": "CVE-2023-44228",
+    "description": "A vulnerability in Apache Struts allows remote code execution via crafted file upload parameters.",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "cwe_id": "CWE-502",
+    "published_date": "2023-12-07T09:15:00Z",
+    "modified_date": "2024-01-10T14:00:00Z",
+    "affected_products": ["Apache Struts 2.0.0-2.5.32", "Apache Struts 6.0.0-6.3.0"],
+    "references": ["https://struts.apache.org/announce-2023"]
+  },
+  {
+    "cve_id": "CVE-2024-6387",
+    "description": "A race condition in OpenSSH's server (sshd) allows unauthenticated remote code execution as root on glibc-based Linux systems. Known as regreSSHion.",
+    "cvss_score": 8.1,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "cwe_id": "CWE-362",
+    "published_date": "2024-07-01T13:15:00Z",
+    "modified_date": "2024-07-15T10:00:00Z",
+    "affected_products": ["OpenSSH 8.5p1-9.7p1"],
+    "references": ["https://www.qualys.com/2024/07/01/cve-2024-6387/regresshion.txt"]
+  },
+  {
+    "cve_id": "CVE-2024-1709",
+    "description": "ConnectWise ScreenConnect authentication bypass vulnerability allows an attacker to gain administrative access to the application.",
+    "cvss_score": 10.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "cwe_id": "CWE-288",
+    "published_date": "2024-02-21T16:15:00Z",
+    "modified_date": "2024-03-01T12:00:00Z",
+    "affected_products": ["ConnectWise ScreenConnect < 23.9.8"],
+    "references": ["https://www.connectwise.com/company/trust/security-bulletins/connectwise-screenconnect-23.9.8"]
+  },
+  {
+    "cve_id": "CVE-2024-47575",
+    "description": "A missing authentication for critical function vulnerability in FortiManager allows a remote unauthenticated attacker to execute arbitrary code.",
+    "cvss_score": 9.8,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "cwe_id": "CWE-306",
+    "published_date": "2024-10-23T15:15:00Z",
+    "modified_date": "2024-11-01T09:00:00Z",
+    "affected_products": ["FortiManager 7.0.0-7.0.12", "FortiManager 7.2.0-7.2.7", "FortiManager 7.4.0-7.4.4", "FortiManager 7.6.0"],
+    "references": ["https://fortiguard.com/psirt/FG-IR-24-423"]
+  },
+  {
+    "cve_id": "CVE-2024-0012",
+    "description": "An authentication bypass in Palo Alto Networks PAN-OS management web interface allows an unauthenticated attacker with network access to gain PAN-OS administrator privileges.",
+    "cvss_score": 9.3,
+    "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:N/SA:N",
+    "cvss_version": "4.0",
+    "cwe_id": "CWE-306",
+    "published_date": "2024-11-18T16:15:00Z",
+    "modified_date": "2024-12-01T10:00:00Z",
+    "affected_products": ["Palo Alto Networks PAN-OS 10.2", "Palo Alto Networks PAN-OS 11.0", "Palo Alto Networks PAN-OS 11.1", "Palo Alto Networks PAN-OS 11.2"],
+    "references": ["https://security.paloaltonetworks.com/CVE-2024-0012"]
+  },
+  {
+    "cve_id": "CVE-2023-22527",
+    "description": "A template injection vulnerability in Atlassian Confluence Server allows an unauthenticated attacker to achieve remote code execution.",
+    "cvss_score": 10.0,
+    "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+    "cvss_version": "3.1",
+    "cwe_id": "CWE-74",
+    "published_date": "2024-01-16T00:15:00Z",
+    "modified_date": "2024-02-01T12:00:00Z",
+    "affected_products": ["Atlassian Confluence Server 8.0.x-8.5.3"],
+    "references": ["https://confluence.atlassian.com/security/cve-2023-22527"]
+  }
+]

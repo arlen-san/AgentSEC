@@ -1,0 +1,122 @@
+[
+  {
+    "id": "da637551227677560813_-961444813",
+    "title": "Suspicious PowerShell command line",
+    "severity": "high",
+    "status": "new",
+    "description": "A suspicious PowerShell command was observed on the device. The command attempted to download and execute a script from an external URL.",
+    "category": "Execution",
+    "source": "Microsoft Defender for Endpoint",
+    "assigned_to": null,
+    "created_at": "2026-08-30T10:15:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "da637551227677560813_-961444814",
+    "title": "Ransomware activity detected",
+    "severity": "critical",
+    "status": "new",
+    "description": "File encryption behavior consistent with ransomware was detected. Multiple files were renamed with suspicious extensions.",
+    "category": "Impact",
+    "source": "Microsoft Defender for Endpoint",
+    "assigned_to": null,
+    "created_at": "2026-08-30T08:45:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "da637551227677560813_-961444815",
+    "title": "Unusual sign-in from anonymous IP address",
+    "severity": "medium",
+    "status": "inProgress",
+    "description": "Sign-in detected from an IP address identified as an anonymous proxy IP address. These are often used by people who want to hide their device IP address.",
+    "category": "InitialAccess",
+    "source": "Microsoft Defender for Cloud Apps",
+    "assigned_to": "analyst@company.com",
+    "created_at": "2026-08-29T14:30:00Z",
+    "updated_at": "2026-08-29T15:00:00Z"
+  },
+  {
+    "id": "da637551227677560813_-961444816",
+    "title": "Suspicious credential theft tool detected",
+    "severity": "high",
+    "status": "new",
+    "description": "Mimikatz credential dumping tool was detected on the endpoint. Immediate investigation recommended.",
+    "category": "CredentialAccess",
+    "source": "Microsoft Defender for Endpoint",
+    "assigned_to": null,
+    "created_at": "2026-08-30T11:20:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "da637551227677560813_-961444817",
+    "title": "Phishing email delivered to user inbox",
+    "severity": "medium",
+    "status": "new",
+    "description": "An email containing a known phishing URL was delivered to a user's inbox. The email impersonates a financial institution.",
+    "category": "InitialAccess",
+    "source": "Microsoft Defender for Office 365",
+    "assigned_to": null,
+    "created_at": "2026-08-30T09:00:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "da637551227677560813_-961444818",
+    "title": "Lateral movement using WMI detected",
+    "severity": "high",
+    "status": "inProgress",
+    "description": "Windows Management Instrumentation was used to remotely execute commands on another machine in the network.",
+    "category": "LateralMovement",
+    "source": "Microsoft Defender for Endpoint",
+    "assigned_to": "analyst@company.com",
+    "created_at": "2026-08-29T22:45:00Z",
+    "updated_at": "2026-08-30T01:00:00Z"
+  },
+  {
+    "id": "da637551227677560813_-961444819",
+    "title": "Suspicious DNS query to known C2 domain",
+    "severity": "critical",
+    "status": "new",
+    "description": "DNS query to a domain associated with known command-and-control infrastructure was detected from an internal host.",
+    "category": "CommandAndControl",
+    "source": "Microsoft Defender for Endpoint",
+    "assigned_to": null,
+    "created_at": "2026-08-30T12:00:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "da637551227677560813_-961444820",
+    "title": "Unusual file creation in system directory",
+    "severity": "low",
+    "status": "resolved",
+    "description": "A new executable file was created in the Windows system directory by a non-system process. Investigation showed it was a legitimate admin tool.",
+    "category": "Persistence",
+    "source": "Microsoft Defender for Endpoint",
+    "assigned_to": "admin@company.com",
+    "created_at": "2026-08-28T16:30:00Z",
+    "updated_at": "2026-08-29T10:00:00Z"
+  },
+  {
+    "id": "da637551227677560813_-961444821",
+    "title": "Data exfiltration attempt via cloud storage",
+    "severity": "high",
+    "status": "new",
+    "description": "Large volume of sensitive files were uploaded to an unauthorized cloud storage service from a corporate device.",
+    "category": "Exfiltration",
+    "source": "Microsoft Defender for Cloud Apps",
+    "assigned_to": null,
+    "created_at": "2026-08-30T07:30:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "da637551227677560813_-961444822",
+    "title": "Multi-factor authentication bypass attempt",
+    "severity": "medium",
+    "status": "new",
+    "description": "Multiple failed MFA attempts detected for a user account, followed by a successful authentication from an unusual location.",
+    "category": "InitialAccess",
+    "source": "Microsoft Defender for Identity",
+    "assigned_to": null,
+    "created_at": "2026-08-30T06:15:00Z",
+    "updated_at": null
+  }
+]

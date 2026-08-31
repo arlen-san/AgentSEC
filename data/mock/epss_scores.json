@@ -1,0 +1,10 @@
+[
+  {"cve_id": "CVE-2024-3400", "score": 0.971, "percentile": 0.998},
+  {"cve_id": "CVE-2024-21762", "score": 0.935, "percentile": 0.995},
+  {"cve_id": "CVE-2023-44228", "score": 0.642, "percentile": 0.972},
+  {"cve_id": "CVE-2024-6387", "score": 0.467, "percentile": 0.945},
+  {"cve_id": "CVE-2024-1709", "score": 0.968, "percentile": 0.997},
+  {"cve_id": "CVE-2024-47575", "score": 0.891, "percentile": 0.990},
+  {"cve_id": "CVE-2024-0012", "score": 0.853, "percentile": 0.985},
+  {"cve_id": "CVE-2023-22527", "score": 0.974, "percentile": 0.999}
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "INC-2026-001",
+    "title": "Multi-stage ransomware attack on workstation WS-PC042",
+    "severity": "critical",
+    "status": "active",
+    "description": "A multi-stage attack was detected involving initial access via phishing, credential theft using Mimikatz, and ransomware deployment.",
+    "classification": "TruePositive",
+    "determination": "Malware",
+    "alert_ids": ["da637551227677560813_-961444814", "da637551227677560813_-961444816", "da637551227677560813_-961444813"],
+    "assigned_to": null,
+    "created_at": "2026-08-30T11:30:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "INC-2026-002",
+    "title": "Suspected C2 communication and lateral movement",
+    "severity": "high",
+    "status": "active",
+    "description": "Command-and-control communication detected followed by lateral movement via WMI to additional hosts.",
+    "classification": "TruePositive",
+    "determination": "Malware",
+    "alert_ids": ["da637551227677560813_-961444819", "da637551227677560813_-961444818"],
+    "assigned_to": "analyst@company.com",
+    "created_at": "2026-08-30T01:15:00Z",
+    "updated_at": "2026-08-30T08:00:00Z"
+  },
+  {
+    "id": "INC-2026-003",
+    "title": "Data exfiltration via unauthorized cloud service",
+    "severity": "high",
+    "status": "active",
+    "description": "Sensitive company data was uploaded to unauthorized cloud storage. Investigation to determine scope of data exposure.",
+    "classification": null,
+    "determination": null,
+    "alert_ids": ["da637551227677560813_-961444821"],
+    "assigned_to": null,
+    "created_at": "2026-08-30T07:45:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "INC-2026-004",
+    "title": "Phishing campaign targeting finance department",
+    "severity": "medium",
+    "status": "active",
+    "description": "Multiple phishing emails targeting the finance department were delivered. One user may have clicked the malicious link.",
+    "classification": null,
+    "determination": null,
+    "alert_ids": ["da637551227677560813_-961444817", "da637551227677560813_-961444822"],
+    "assigned_to": null,
+    "created_at": "2026-08-30T09:15:00Z",
+    "updated_at": null
+  },
+  {
+    "id": "INC-2026-005",
+    "title": "Benign admin tool false positive",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Alert for file creation in system directory was investigated and determined to be a legitimate IT admin tool deployment.",
+    "classification": "FalsePositive",
+    "determination": "SecurityTesting",
+    "alert_ids": ["da637551227677560813_-961444820"],
+    "assigned_to": "admin@company.com",
+    "created_at": "2026-08-28T17:00:00Z",
+    "updated_at": "2026-08-29T10:30:00Z"
+  }
+]

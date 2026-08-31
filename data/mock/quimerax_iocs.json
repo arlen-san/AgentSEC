@@ -1,0 +1,136 @@
+{
+  "iocs": [
+    {
+      "type": "ip",
+      "value": "185.220.101.45",
+      "risk_score": 92.0,
+      "source": "QuimeraX",
+      "first_seen": "2026-07-15T08:00:00Z",
+      "last_seen": "2026-08-30T06:00:00Z",
+      "tags": ["c2", "cobalt-strike", "apt"],
+      "description": "IP associated with Cobalt Strike C2 beacon infrastructure"
+    },
+    {
+      "type": "domain",
+      "value": "malware-update.serveblog.net",
+      "risk_score": 88.5,
+      "source": "QuimeraX",
+      "first_seen": "2026-08-01T12:00:00Z",
+      "last_seen": "2026-08-29T18:00:00Z",
+      "tags": ["phishing", "credential-stealer"],
+      "description": "Domain used in credential phishing campaign targeting Brazilian financial sector"
+    },
+    {
+      "type": "hash_sha256",
+      "value": "a3b5c7d9e1f2a4b6c8d0e2f4a6b8c0d2e4f6a8b0c2d4e6f8a0b2c4d6e8f0a2b4",
+      "risk_score": 95.0,
+      "source": "QuimeraX",
+      "first_seen": "2026-08-20T10:00:00Z",
+      "last_seen": "2026-08-28T14:00:00Z",
+      "tags": ["ransomware", "lockbit"],
+      "description": "SHA256 hash of LockBit 4.0 ransomware payload"
+    },
+    {
+      "type": "domain",
+      "value": "secure-login-portal.com",
+      "risk_score": 75.0,
+      "source": "QuimeraX",
+      "first_seen": "2026-08-10T09:00:00Z",
+      "last_seen": "2026-08-25T11:00:00Z",
+      "tags": ["phishing", "typosquatting"],
+      "description": "Typosquatting domain mimicking corporate login portal"
+    },
+    {
+      "type": "ip",
+      "value": "45.155.205.233",
+      "risk_score": 85.0,
+      "source": "QuimeraX",
+      "first_seen": "2026-06-01T00:00:00Z",
+      "last_seen": "2026-08-30T02:00:00Z",
+      "tags": ["scanner", "brute-force", "ssh"],
+      "description": "IP conducting SSH brute-force attacks against Brazilian infrastructure"
+    },
+    {
+      "type": "email",
+      "value": "suporte@banco-seguro.net",
+      "risk_score": 70.0,
+      "source": "QuimeraX",
+      "first_seen": "2026-08-15T08:00:00Z",
+      "last_seen": "2026-08-29T16:00:00Z",
+      "tags": ["phishing", "social-engineering"],
+      "description": "Email address used in social engineering campaign targeting bank customers"
+    },
+    {
+      "type": "url",
+      "value": "https://docs-share.example.com/download/invoice.exe",
+      "risk_score": 90.0,
+      "source": "QuimeraX",
+      "first_seen": "2026-08-25T14:00:00Z",
+      "last_seen": "2026-08-30T08:00:00Z",
+      "tags": ["malware-distribution", "trojan"],
+      "description": "URL distributing trojan disguised as invoice document"
+    },
+    {
+      "type": "hash_md5",
+      "value": "d41d8cd98f00b204e9800998ecf8427e",
+      "risk_score": 15.0,
+      "source": "QuimeraX",
+      "first_seen": "2026-01-01T00:00:00Z",
+      "last_seen": "2026-08-01T00:00:00Z",
+      "tags": ["empty-file", "benign"],
+      "description": "MD5 hash of empty file - commonly seen in testing, likely benign"
+    }
+  ],
+  "leaked_credentials": [
+    {
+      "email": "joao.silva@empresa.com.br",
+      "source": "Infostealer - Raccoon v2",
+      "date_detected": "2026-08-15T10:00:00Z",
+      "password_exposed": true,
+      "breach_name": "Brazilian Corporate Dump 2026"
+    },
+    {
+      "email": "maria.santos@empresa.com.br",
+      "source": "Dark Web Forum",
+      "date_detected": "2026-08-20T14:30:00Z",
+      "password_exposed": false,
+      "breach_name": null
+    },
+    {
+      "email": "admin@empresa.com.br",
+      "source": "Infostealer - RedLine",
+      "date_detected": "2026-08-28T09:00:00Z",
+      "password_exposed": true,
+      "breach_name": "Stealer Logs Collection #47"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "QX-2026-0451",
+      "title": "Credenciais corporativas detectadas em dump de infostealer",
+      "severity": "high",
+      "category": "leaked_credentials",
+      "description": "Três credenciais do domínio empresa.com.br foram encontradas em logs de infostealer (Raccoon v2 e RedLine) na dark web.",
+      "iocs": [],
+      "created_at": "2026-08-28T10:00:00Z"
+    },
+    {
+      "id": "QX-2026-0452",
+      "title": "Domínio de typosquatting registrado - secure-login-portal.com",
+      "severity": "medium",
+      "category": "brand_protection",
+      "description": "Um domínio similar ao portal corporativo foi registrado recentemente e está hospedando uma página de login falsa.",
+      "iocs": [{"type": "domain", "value": "secure-login-portal.com", "risk_score": 75.0, "source": "QuimeraX", "tags": ["phishing", "typosquatting"], "description": "Typosquatting domain"}],
+      "created_at": "2026-08-25T08:00:00Z"
+    },
+    {
+      "id": "QX-2026-0453",
+      "title": "Infraestrutura C2 detectada comunicando com rede interna",
+      "severity": "critical",
+      "category": "threat_intelligence",
+      "description": "IP associado a infraestrutura de Cobalt Strike foi detectado em comunicação com hosts internos da organização.",
+      "iocs": [{"type": "ip", "value": "185.220.101.45", "risk_score": 92.0, "source": "QuimeraX", "tags": ["c2", "cobalt-strike", "apt"], "description": "C2 infrastructure"}],
+      "created_at": "2026-08-30T06:30:00Z"
+    }
+  ]
+}
